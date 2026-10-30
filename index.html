@@ -5,6 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+     <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1b24;
+            padding: 1rem 2rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 2px solid #ff7518;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff7518;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #f1f1f1;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff7518;
+        }
+
+        /* Portada con IMAGEN DE FONDO */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://images.unsplash.com/photo-1512813195386-6cf811ad3542?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: #ff7518;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #ddd;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        /* Contenedor de secciones */
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background-color: #1e1b24;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid #ff7518;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        section h2 {
+            color: #ff7518;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilos para las IMÁGENES DENTRO DEL CONTENIDO */
+        .img-seccion {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 1rem;
+            border: 2px solid #ff7518;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1f1b24;
+            color: #888;
+            border-top: 1px solid #333;
+        }
+    </style>
 </head>
 <body>
     <h1>Dia de muertos</h1>
